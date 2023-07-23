@@ -30,22 +30,26 @@
     // Это было не тяжело, но с replace нужно много проработать что бы понять как он работает (более тяжелее)
 
 
-    // let users = [
-    //   {
-    //     name: 'Owen',
-    //     age: 45
-    //   },
-    //   {
-    //     name: 'Alex',
-    //     age: 20
-    //   },
-    //   {
-    //     name: 'Nick',
-    //     age: 26
-    //   },
-    // ]
-    // console.log(users) // result - any user age >= 26
-    // // method filter js
+    let users = [
+      {
+        name: 'Owen',
+        age: 45
+      },
+      {
+        name: 'Alex',
+        age: 20
+      },
+      {
+        name: 'Nick',
+        age: 26
+      },
+    ]
+
+    let filterAge = users.filter(e => e.age >= 26)
+
+    console.log(filterAge) // result - any user age >= 26
+    // method filter js
+    // Это тоже было не тяжело, с гуглом все сделал, правда с этой частью не очень понял что тут делается (e => e.age)... дальше в скобках понял по поводу фильтрации >=26
 	</script>
 </body>
 </html>
