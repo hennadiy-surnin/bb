@@ -1,27 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+
 <body>
-	<script>
-    let a, b, c, d
-    
-    a = '10'
-    b = '15'
-    c = 20
-
-    d = a + b + c 
-    console.log(d) // result - 45
-    // convert string to number
-
-    let helloWorld = 'Hekko world'
-    console.log(helloWorld) // result - Hello world
-    // method replace js
-
+  <script>
     let users = [
       {
         name: 'Owen',
@@ -35,9 +23,24 @@
         name: 'Nick',
         age: 26
       },
+      {
+        name: 'Nick',
+        age: 40
+      },
+      {
+        name: 'Owen',
+        age: 15
+      },
+      {
+        name: 'Nick',
+        age: 33
+      },
     ]
-    console.log(users) // result - any user age >= 26
-    // method filter js
-	</script>
+
+    // добавить в массив users пользователя с структурой данных как выше(только name и age) с любым именем и возрастом (push)
+    // отфильтровать и получить список пользователей с именем Nick (filter)
+    // найти в отфильтрованном списке пользователя у которого возраст 33 (find)
+  </script>
 </body>
+
 </html>
