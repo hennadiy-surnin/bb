@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+
 <body>
 	<script>
     let a, b, c, d
@@ -30,6 +32,7 @@
     // Это было не тяжело, но с replace нужно много проработать что бы понять как он работает (более тяжелее)
 
 
+  <script>
     let users = [
       {
         name: 'Owen',
@@ -43,13 +46,31 @@
         name: 'Nick',
         age: 26
       },
+      {
+        name: 'Nick',
+        age: 40
+      },
+      {
+        name: 'Owen',
+        age: 15
+      },
+      {
+        name: 'Nick',
+        age: 33
+      },
     ]
 
+    
     let filterAge = users.filter(e => e.age >= 26)
 
     console.log(filterAge) // result - any user age >= 26
     // method filter js
     // Это тоже было не тяжело, с гуглом все сделал, правда с этой частью не очень понял что тут делается (e => e.age)... дальше в скобках понял по поводу фильтрации >=26
 	</script>
+    // добавить в массив users пользователя с структурой данных как выше(только name и age) с любым именем и возрастом (push)
+    // отфильтровать и получить список пользователей с именем Nick (filter)
+    // найти в отфильтрованном списке пользователя у которого возраст 33 (find)
+  </script>
 </body>
+
 </html>
