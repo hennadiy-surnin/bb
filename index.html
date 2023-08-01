@@ -9,6 +9,10 @@
 </head>
 
 <body>
+  <div id="users">
+
+  </div>
+
   <script>
     let users = [
       {
@@ -36,6 +40,19 @@
         age: 33
       },
     ]
+
+    const parentElement = document.getElementById("users");
+
+    users.forEach(function(item) {
+      const newDiv = document.createElement("div");
+
+      const text = "Имя: " + item.name + "\nВозраст: " + item.age;
+      text = text.replace(/\n/g, "<br>");
+
+      newDiv.innerHTML = text;
+
+      parentElement.appendChild(newDiv);
+    });
 
     // добавить на страницу всех пользователе из массива в виде:
     // name - *name*
