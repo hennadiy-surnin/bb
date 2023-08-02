@@ -9,33 +9,44 @@
 </head>
 
 <body>
-  <script>
-    let users = [
-      {
-        name: 'Owen',
-        age: 45
-      },
-      {
-        name: 'Alex',
-        age: 20
-      },
-      {
-        name: 'Nick',
-        age: 26
-      },
-      {
-        name: 'Nick',
-        age: 40
-      },
-      {
-        name: 'Owen',
-        age: 15
-      },
-      {
-        name: 'Nick',
-        age: 33
-      },
-    ]
+<div class="container"></div>
+
+<script>
+  let users = [
+    {
+      name: 'Owen',
+      age: 45
+    },
+    {
+      name: 'Alex',
+      age: 20
+    },
+    {
+      name: 'Nick',
+      age: 26
+    },
+    {
+      name: 'Nick',
+      age: 40
+    },
+    {
+      name: 'Owen',
+      age: 15
+    },
+    {
+      name: 'Nick',
+      age: 33
+    },
+  ]
+
+  const element = document.querySelector(".container");
+
+  users.forEach(user => {
+    const newDiv = document.createElement('div');
+    const textString = `Name: ${user.name}, <br>Age: ${user.age}`;
+    newDiv.innerHTML = textString;
+    element.appendChild(newDiv);
+  })
 
     // добавить на страницу всех пользователе из массива в виде:
     // name - *name*
